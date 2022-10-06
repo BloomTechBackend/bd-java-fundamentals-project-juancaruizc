@@ -3,11 +3,14 @@ package main.com.adventure.world.objects;
 import main.com.adventure.world.objects.keys.Key;
 
 public class HoleContent {
-
     private Key content;
     private boolean isCovered = true;
 
-    public void HoleContent(Key key) {
+    /**
+     * Creates a hole with the given content.
+     * @param key - the item that is covered by the hole.
+     */
+    public HoleContent(Key key) {
         this.content = key;
     }
 
@@ -19,7 +22,7 @@ public class HoleContent {
         return isCovered;
     }
 
-   public Key getKey() {
+    public Key getKey() {
         return content;
-   }
+    }
 }
