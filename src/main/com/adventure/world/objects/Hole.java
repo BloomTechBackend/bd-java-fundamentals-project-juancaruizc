@@ -2,19 +2,24 @@ package main.com.adventure.world.objects;
 
 import main.com.adventure.world.objects.keys.Key;
 
+
+
 public class Hole {
+
+    private HoleContent content;
 
     /**
      * Creates a hole with the given content.
      * @param content - the item that is covered by the hole.
      */
     public Hole(Key content) {
-
+        this.content = new HoleContent(content);
     }
 
+
     public boolean isCovered() {
-        //TODO This value should come from HoleContent
-        return false;
+        //TODO This value should come from HoleContent.
+        return content.isCovered();
     }
 
     /**
@@ -22,6 +27,7 @@ public class Hole {
      */
     public void dig() {
         //TODO this function should update HoleContent's isCovered property.
+        content.setIsCovered(false);
     }
 
     /**
@@ -30,7 +36,11 @@ public class Hole {
      */
     private Key getKeyIfPossible() {
         //TODO Get the HoleContent's content only if the hole is uncovered.
-        return null;
+        if(content.isCovered() == false){
+            return content.getKey();
+        } else {
+            return null;
+        }
     }
 
     /**
@@ -39,5 +49,6 @@ public class Hole {
      */
     public Tangible getContent() {
         return getKeyIfPossible();
+
     }
 }
