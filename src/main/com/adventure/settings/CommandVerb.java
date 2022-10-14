@@ -26,7 +26,42 @@ public enum CommandVerb {
      * @return - the CommandVerb associated with the given input.
      */
     public static CommandVerb getVerb(String verbString) {
-        return INVALID;
-    }
 
+        CommandVerb verb = CommandVerb.INVALID;
+
+        switch (verbString) {
+            case "take":
+                verb = CommandVerb.TAKE;
+                break;
+            case "move":
+                verb = CommandVerb.MOVE;
+                break;
+            case "use":
+                verb = CommandVerb.USE;
+                break;
+            case "dig":
+                verb = CommandVerb.DIG;
+                break;
+            case "examine":
+                verb = CommandVerb.EXAMINE;
+                break;
+            case "look":
+                verb = CommandVerb.LOOK;
+                break;
+            case "help":
+                verb = CommandVerb.HELP;
+                break;
+            case "fight":
+                verb = CommandVerb.FIGHT;
+                break;
+            case "inventory":
+                verb = CommandVerb.INVENTORY;
+                break;
+            default:
+                verb = CommandVerb.INVALID;
+                break;
+        }
+        return verb;
+
+    }
 }

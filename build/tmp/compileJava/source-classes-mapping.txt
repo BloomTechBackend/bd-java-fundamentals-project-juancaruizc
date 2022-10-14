@@ -1,5 +1,5 @@
-main/com/adventure/world/scenes/s2_m2/TwoPathsScene.java
- main.com.adventure.world.scenes.s2_m2.TwoPathsScene
+main/com/adventure/world/scenes/s2_m4/DigEscapeScene.java
+ main.com.adventure.world.scenes.s2_m4.DigEscapeScene
 main/com/adventure/world/objects/Weapon.java
  main.com.adventure.world.objects.Weapon
 main/com/adventure/world/scenes/IMonsterScene.java
@@ -32,8 +32,8 @@ main/com/adventure/CombatController.java
  main.com.adventure.CombatController
 main/com/adventure/world/objects/keys/ConsoleKey.java
  main.com.adventure.world.objects.keys.ConsoleKey
-main/com/adventure/world/scenes/s2_m3/OutsideCaveScene.java
- main.com.adventure.world.scenes.s2_m3.OutsideCaveScene
+main/com/adventure/world/objects/HoleContent.java
+ main.com.adventure.world.objects.HoleContent
 main/com/adventure/world/objects/Tangible.java
  main.com.adventure.world.objects.Tangible
 main/com/adventure/world/objects/TangibleListener.java
@@ -58,14 +58,14 @@ main/com/adventure/world/objects/keys/KeyFactory.java
  main.com.adventure.world.objects.keys.KeyFactory
 main/com/adventure/world/scenes/s3_m2/MonsterScene.java
  main.com.adventure.world.scenes.s3_m2.MonsterScene
-main/com/adventure/world/scenes/s2_m2/HallwayDoorScene.java
- main.com.adventure.world.scenes.s2_m2.HallwayDoorScene
+main/com/adventure/world/objects/Hole.java
+ main.com.adventure.world.objects.Hole
 main/com/adventure/world/objects/keys/Key.java
  main.com.adventure.world.objects.keys.Key
 main/com/adventure/settings/CommandVerb.java
  main.com.adventure.settings.CommandVerb
-main/com/adventure/settings/GameController.java
- main.com.adventure.settings.GameController
+main/com/adventure/world/scenes/s2_m3/OutsideCaveScene.java
+ main.com.adventure.world.scenes.s2_m3.OutsideCaveScene
 main/com/adventure/settings/AppSettings.java
  main.com.adventure.settings.AppSettings
  main.com.adventure.settings.AppSettings$1
@@ -76,11 +76,12 @@ main/com/adventure/world/objects/doors/Door.java
  main.com.adventure.world.objects.doors.Door
 main/com/adventure/world/objects/keys/OmniKey.java
  main.com.adventure.world.objects.keys.OmniKey
+main/com/adventure/world/scenes/s2_m2/HallwayDoorScene.java
+ main.com.adventure.world.scenes.s2_m2.HallwayDoorScene
+main/com/adventure/world/scenes/s2_m2/TwoPathsScene.java
+ main.com.adventure.world.scenes.s2_m2.TwoPathsScene
+main/com/adventure/settings/GameController.java
+ main.com.adventure.settings.GameController
+ main.com.adventure.settings.GameController$1
 main/com/adventure/Main.java
  main.com.adventure.Main
-main/com/adventure/world/scenes/s2_m4/DigEscapeScene.java
- main.com.adventure.world.scenes.s2_m4.DigEscapeScene
-main/com/adventure/world/objects/HoleContent.java
- main.com.adventure.world.objects.HoleContent
-main/com/adventure/world/objects/Hole.java
- main.com.adventure.world.objects.Hole
