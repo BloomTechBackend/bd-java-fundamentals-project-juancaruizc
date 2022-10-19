@@ -14,8 +14,6 @@ public class Player {
     private Shovel shovel;
     private int power = 1;
     private int health = 10;
-
-
     private String name;
     /**
      * Sprint 2 Module 1
@@ -94,6 +92,7 @@ public class Player {
      */
     public void setWeapon(Weapon item) {
         //TODO Complete this function in Sprint 3 Module 2
+        power *= item.getPower();
     }
 
     /**

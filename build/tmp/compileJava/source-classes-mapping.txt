@@ -12,8 +12,8 @@ main/com/adventure/world/scenes/SceneDescriptionNotFoundException.java
  main.com.adventure.world.scenes.SceneDescriptionNotFoundException
 main/com/adventure/world/objects/doors/OmniDoor.java
  main.com.adventure.world.objects.doors.OmniDoor
-main/com/adventure/player/Player.java
- main.com.adventure.player.Player
+main/com/adventure/world/scenes/s2_m2/TwoPathsScene.java
+ main.com.adventure.world.scenes.s2_m2.TwoPathsScene
 main/com/adventure/world/objects/Shovel.java
  main.com.adventure.world.objects.Shovel
 main/com/adventure/world/World.java
@@ -22,14 +22,14 @@ main/com/adventure/world/World.java
  main.com.adventure.world.World$ConsoleEscapeTangibleListener
 main/com/adventure/settings/CommandConstants.java
  main.com.adventure.settings.CommandConstants
-main/com/adventure/world/scenes/SceneDescriptionFileReader.java
- main.com.adventure.world.scenes.SceneDescriptionFileReader
+main/com/adventure/player/Player.java
+ main.com.adventure.player.Player
 main/com/adventure/world/Monster.java
  main.com.adventure.world.Monster
 main/com/adventure/world/scenes/s2_m3/HouseScene.java
  main.com.adventure.world.scenes.s2_m3.HouseScene
-main/com/adventure/CombatController.java
- main.com.adventure.CombatController
+main/com/adventure/world/scenes/s2_m2/HallwayDoorScene.java
+ main.com.adventure.world.scenes.s2_m2.HallwayDoorScene
 main/com/adventure/world/objects/keys/ConsoleKey.java
  main.com.adventure.world.objects.keys.ConsoleKey
 main/com/adventure/world/objects/HoleContent.java
@@ -76,12 +76,12 @@ main/com/adventure/world/objects/doors/Door.java
  main.com.adventure.world.objects.doors.Door
 main/com/adventure/world/objects/keys/OmniKey.java
  main.com.adventure.world.objects.keys.OmniKey
-main/com/adventure/world/scenes/s2_m2/HallwayDoorScene.java
- main.com.adventure.world.scenes.s2_m2.HallwayDoorScene
-main/com/adventure/world/scenes/s2_m2/TwoPathsScene.java
- main.com.adventure.world.scenes.s2_m2.TwoPathsScene
+main/com/adventure/Main.java
+ main.com.adventure.Main
+main/com/adventure/world/scenes/SceneDescriptionFileReader.java
+ main.com.adventure.world.scenes.SceneDescriptionFileReader
 main/com/adventure/settings/GameController.java
  main.com.adventure.settings.GameController
  main.com.adventure.settings.GameController$1
-main/com/adventure/Main.java
- main.com.adventure.Main
+main/com/adventure/CombatController.java
+ main.com.adventure.CombatController
