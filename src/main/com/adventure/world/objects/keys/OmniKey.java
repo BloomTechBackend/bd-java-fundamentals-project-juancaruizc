@@ -27,11 +27,10 @@ public class OmniKey implements Tangible {
     @Override
     public void useItem(Tangible door) {
         if (door instanceof OmniDoor) {
-            //TODO Complete the function
-                OmniDoor door1 = (OmniDoor) door;
-                for (int i = 0; i < pinLength; i++) {
-                    pins[i] = door1.pins[i];
-                }
+            OmniDoor door1 = (OmniDoor) door;
+            for (int i = 0; i < pinLength; i++) {
+                pins[i] = door1.pins[i];
+            }
         } else {
             System.out.println("This key can only be used with OmniDoors.");
         }

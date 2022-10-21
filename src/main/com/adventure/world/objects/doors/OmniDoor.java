@@ -44,10 +44,17 @@ public class OmniDoor implements Tangible {
         Arrays.fill(pins, true);
     }
 
-
+    /**
+     *Creates an OmniDoor with a lock that is randomly generated.
+     *@param key - The key that will be used to unlock this door.
+     */
     public void unlock(OmniKey key) {
         //TODO Complete the function
-        if (key.pins[0] == pins[0] && key.pins[1] == pins[1] && key.pins[2] == pins[2] && key.pins[3] == pins[3] && key.pins[4] == pins[4]) {
+        if (key.pins[0] == pins[0] &&
+                key.pins[1] == pins[1] &&
+                key.pins[2] == pins[2] &&
+                key.pins[3] == pins[3] &&
+                key.pins[4] == pins[4]) {
             isOpen = true;
             System.out.println("The door is unlocked!");
         } else {
@@ -56,20 +63,24 @@ public class OmniDoor implements Tangible {
     }
 
     /**
-     *   The method will check each pin from the key with the pin in the lock. When the first incorrect pin is found, that
-     *   index is returned immediately. For example, if the pin at index 1 is incorrect, then this method will return 1 and
+     *   The method will check each pin from the key with the pin in the lock.
+     *   When the first incorrect pin is found, that
+     *   index is returned immediately. For example, if the pin at index 1 is incorrect,
+     *   then this method will return 1 and
      *   NOT continue checking subsequent pins.
      *   If all pins are correct, then the method will return -1.
      *   @param key the key to use to configure the door.
      *   @return the index of the first incorrect pin, or -1 if
      *   all are correct.
-     * @param key
-     * @return
      */
     public int getFirstWrongPin(OmniKey key) {
         //TODO Complete the function
 
-        if (key.pins[0] == pins[0] && key.pins[1] == pins[1] && key.pins[2] == pins[2] && key.pins[3] == pins[3] && key.pins[4] == pins[4]) {
+        if (key.pins[0] == pins[0] &&
+                key.pins[1] == pins[1] &&
+                key.pins[2] == pins[2] &&
+                key.pins[3] == pins[3] &&
+                key.pins[4] == pins[4]) {
             return -1;
         } else {
             for (int i = 0; i < 5; i++) {
