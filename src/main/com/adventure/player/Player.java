@@ -10,11 +10,10 @@ public class Player {
 
     public int level = 5;
     private int currentLocationIndex = AppSettings.getStartingLocation();
-    private Key key;
-    private Shovel shovel;
     private int power = 1;
     private int health = 10;
     private String name;
+    private Backpack backpack = new Backpack();
     /**
      * Sprint 2 Module 1
      * Saves the player's name. This file should store the name so it can be referenced later. After setting the name,
@@ -103,7 +102,7 @@ public class Player {
      */
     public Tangible getItem(String itemName) {
         //TODO Complete this function in Sprint 3 Module 3
-        return null;
+        return backpack.getItem(itemName);
     }
 
     /**
@@ -114,6 +113,9 @@ public class Player {
      */
     public Tangible removeItem(Tangible item) {
         //TODO Complete this function in Sprint 3 Module 3
+        if (backpack.removeItem(item)) {
+            return item;
+        }
         return null;
     }
 
@@ -123,6 +125,7 @@ public class Player {
      */
     public void printItems() {
         //TODO Complete this function in Sprint 3 Module 3
+        backpack.printItems();
     }
 
     /**
@@ -132,22 +135,35 @@ public class Player {
      */
     public void addItem(Tangible item) {
         //TODO Complete this function
+        backpack.addItem(item);
     }
 
+    /**
+     * adds an item to the backpack array.
+     * @param item - item to add.
+     */
     public void setKey(Key item) {
-        key = item;
+        backpack.addItem(item);
     }
 
+    /**
+     * gets a key from the backpack array defaults to the "key" string.
+     * @return the key.
+     */
     public Key getKey() {
-        return key;
+        return (Key) backpack.getItem("key");
     }
 
+    /**
+     * adds an item to the backpack array.
+     * @param item - item to add.
+     */
     public void setShovel(Shovel item) {
-        shovel = item;
+        backpack.addItem(item);
     }
 
     public Shovel getShovel() {
-        return shovel;
+        return (Shovel) backpack.getItem("shovel");
     }
 
     //////// DON'T CHANGE THE CODE BELOW. ///////////
