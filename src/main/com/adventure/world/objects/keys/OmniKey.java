@@ -32,7 +32,7 @@ public class OmniKey implements Tangible {
                 pins[i] = door1.pins[i];
             }
         } else {
-            System.out.println("This key can only be used with OmniDoors.");
+            System.out.println("This key can only be used with OmniDoors!");
         }
 
     }
