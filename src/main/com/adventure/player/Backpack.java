@@ -18,9 +18,15 @@ public class Backpack {
      */
     public boolean addItem(Tangible item) {
         //TODO Complete the function
+        for (int i = 0; i < items.length; i++) {
+            if (items[i] == null) {
+                items[i] = item;
+                return true;
+            }
+
+        }
         return false;
     }
-
     /**
      * Checks each backpack item's name to see if it matches the given name.
      * @param name - the name of the item to search for.
@@ -28,6 +34,11 @@ public class Backpack {
      */
     public Tangible getItem(String name) {
         //TODO Complete the function
+        for (int i = 0; i < items.length; i++) {
+            if (items[i] != null && items[i].getName().equals(name)) {
+                return items[i];
+            }
+        }
         return null;
     }
 
@@ -38,6 +49,12 @@ public class Backpack {
      */
     public boolean removeItem(Tangible item) {
         //TODO Complete the function
+        for (int i = 0; i < items.length; i++) {
+            if (items[i] != null && items[i].getName().equals(item.getName())) {
+                items[i] = null;
+                return true;
+            }
+        }
         return false;
     }
 
@@ -51,5 +68,11 @@ public class Backpack {
      */
     public void printItems() {
         //TODO Complete the function
+        System.out.println("Here are the items in your backpack:");
+        for (int i = 0; i < items.length; i++) {
+            if (items[i] != null) {
+                System.out.println(" - " + items[i].getName());
+            }
+        }
     }
 }

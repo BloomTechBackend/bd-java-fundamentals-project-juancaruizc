@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.adventure.MT8" tests="5" skipped="0" failures="0" errors="0" timestamp="2022-10-21T00:15:20" hostname="Juans-MacBook-Pro.local" time="0.901">
+  <properties/>
+  <testcase name="testPrintItemsCommand()" classname="com.adventure.MT8" time="0.865"/>
+  <testcase name="testBackpackAddRemoveItem()" classname="com.adventure.MT8" time="0.006"/>
+  <testcase name="testBackpackLimit()" classname="com.adventure.MT8" time="0.013"/>
+  <testcase name="testBackpackViaPlayer()" classname="com.adventure.MT8" time="0.008"/>
+  <testcase name="testPrintBackpack()" classname="com.adventure.MT8" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
