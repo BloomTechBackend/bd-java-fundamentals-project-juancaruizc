@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.adventure.MT9" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-10-21T22:21:38" hostname="Juans-MacBook-Pro.local" time="0.094">
-  <properties/>
-  <testcase name="testOmniDoorKey()" classname="com.adventure.MT9" time="0.094"/>
-  <system-out><![CDATA[The door is unlocked!
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
